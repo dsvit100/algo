@@ -4,15 +4,9 @@
 # 짝수 규정
 # 덧셈
 
-def solution(n): # 값의 반복
-    answer = 0
-
-    for i in range(n+1):
-        if i % 2 == 0:
-            answer = answer + i # (= answer += i)
-
-    return answer
-
-
-print(solution(10))
-print(solution(4))
+def my_number(n):
+    if n % 2 == 0:
+        sum(n)
+    return
+print(my_number(10))
+print(my_number(4))

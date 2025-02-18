@@ -1,11 +1,12 @@
 # num_list 에 기재된 숫자를 거꾸로 뒤집은 배열 출력
-# 
+# 슬라이싱으로 해결하기
+# 변수[시작:끝:n만큼띄워서]
 
 def solution(num_list):
-    result = []
-    for num in num_list:
-        result.insert(0, num)
-    return result
+    return num_list[::-1]
+    # 슬라이싱에서 3번째 값을 -1로 넣으면
+    # 처음(:)부터 끝(:)까지 뒤에서부터(-1) 데이터를 잘라서 나열
+    # => 역순
 
 
 print(solution([1, 2, 3, 4, 5])) # => [5, 4, 3, 2, 1]
